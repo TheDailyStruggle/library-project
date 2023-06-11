@@ -12,17 +12,30 @@
 <body>
     <header>
         <div class="logo">The Odin Library</div>
-        <button class="addBookBtn">Add A Book</button>
+        <button class="addBookBtn" id="addBookBtn">Add A Book</button>
     </header>
 
-    <main>
+    <main class="" id="library">
         <card class="book">
             <p class="bookTitle">Atomic Habits</p>
             <p class="bookAuthor">James Clear</p>
             <button class="readBtn read">Read</button>
-            <button class="deleteBtn">Delete</button>
+            <button class="deleteBtn" id="delete">Delete</button>
         </card>
     </main>
+
+    <form class="hidden" id="addBookForm">
+        <legend>Add A Book</legend>
+        <label for="title">Title</label>
+        <input type="text" id="title">
+        <label for="author">Author</label>
+        <input type="text" id="author">
+        <fieldset>
+            <label for="isRead">Have You Read It?</label>
+            <input type="checkbox" id="isRead">
+        </fieldset>
+        <button>Add Book</button>
+    </form>
 
     <script src="javascript.js"></script>
 </body>
